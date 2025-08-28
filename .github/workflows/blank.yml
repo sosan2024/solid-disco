@@ -1,0 +1,1483 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>청학_밥집_홈페이지</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+
+  <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+
+
+  <script src="script.js"></script>
+
+  <style>
+    .청학밥집로고 {
+      border-top: 2px solid black;
+      margin-bottom: 5px;
+    }
+
+    .키워드나열 {
+      border-right: 2px solid Lavender;
+    }
+  </style>
+
+  <title>KaKaoMap Study : olrlobt</title>
+  <title>여러개 마커 표시하기</title>
+
+</head>
+
+
+<body>
+
+
+  <div style="position: relative; z-index: 2;">
+    <div class="mobile_btn">
+      <input type="checkbox" id="hamburger" />
+      <label for="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+      <div class="sidebar">
+        <h2 style="text-align: center; position: relative; top: 70px;"> <a href="index.html">
+            <img class="branding-logo" src="청학밥집 로고.png" width="100%" alt="logo">
+          </a>
+        </h2>
+        <h3>
+          <div id="ham-menu-wrap" style="text-align: center; position: relative; top: 80px;">
+            <div class="btn"></div>
+            <div onclick="history.back();" class="page_cover"></div>
+
+            <div id="menu">
+              <ul class="nav">
+                <li><a>음식 종류</a>
+                  <ul class="sub_mobile">
+
+                    <style>
+                      .dropdown-content {
+                        display: none;
+                        position: relative;
+                        background-color: #ccc;
+                        min-width: 150%;
+                        z-index: 100;
+                        top: 0px;
+                        right: 0%;
+                      }
+
+                      .dropdown-content a {
+                        color: black;
+                        padding: 20px 20px;
+                        text-decoration: none;
+                        display: block;
+                      }
+
+                      .dropdown:hover .dropdown-content {
+                        display: block;
+                      }
+                    </style>
+
+                    <div class="dropdown">
+                      <a class="dropbtn">분식</a>
+
+
+                      <div class="dropdown-content">
+                        <div><a class="modal-Btn" data-modal-id="modal1">감탄 떡볶이</a></div>
+                        <div><a class="modal-Btn" data-modal-id="modal2">고고 떡볶이</a></div>
+                        <div><a class="modal-Btn" data-modal-id="modal3">우리 할매 떡볶이</a></div>
+                        <div><a class="modal-Btn" data-modal-id="modal4">츄밥</a></div>
+
+
+                      </div>
+                    </div>
+                  </ul>
+                  <ul class="sub_mobile">
+
+                    <style>
+                      .dropdown-content {
+                        display: none;
+                        position: relative;
+                        background-color: #ccc;
+                        min-width: 150%;
+                        z-index: 100;
+                        top: 0px;
+                        right: 0%;
+                      }
+
+                      .dropdown-content a {
+                        color: black;
+                        padding: 20px 20px;
+                        text-decoration: none;
+                        display: block;
+                      }
+
+                      .dropdown:hover .dropdown-content {
+                        display: block;
+                      }
+                    </style>
+
+                    <div class="dropdown">
+                      <a class="dropbtn">한식</a>
+
+                      <div class="dropdown-content">
+                        <div><a class="modal-Btn" data-modal-id="modal5">보쌈 클라스</a></div>
+                        <div><a class="modal-Btn" data-modal-id="modal6">신의주 순대와 쭈꾸미</a></div>
+                        <div><a class="modal-Btn" data-modal-id="modal7">시집 온 닭갈비</a></div>
+                        <div><a class="modal-Btn" data-modal-id="modal8">청학냉면</a></div>
+
+
+                      </div>
+                    </div>
+                  </ul>
+                  <ul class="sub_mobile">
+
+                    <style>
+                      .dropdown-content {
+                        display: none;
+                        position: relative;
+                        background-color: #ccc;
+                        min-width: 150%;
+                        z-index: 100;
+                        top: 0px;
+                        right: 0%;
+                      }
+
+                      .dropdown-content a {
+                        color: black;
+                        padding: 20px 20px;
+                        text-decoration: none;
+                        display: block;
+                      }
+
+                      .dropdown:hover .dropdown-content {
+                        display: block;
+                      }
+                    </style>
+
+                    <div class="dropdown">
+                      <a class="dropbtn">복합</a>
+                      <div class="dropdown-content">
+                        <div><a class="modal-Btn" data-modal-id="modal9">국수나무</a></div>
+                        <div><a class="modal-Btn" data-modal-id="modal10">깁밥나라</a></div>
+                        <div><a class="modal-Btn" data-modal-id="modal11">수유리 우동집</a></div>
+                        <div><a class="modal-Btn" data-modal-id="modal12">토마토 도시락</a></div>
+
+                      </div>
+                    </div>
+                  </ul>
+
+                  <ul class="sub_mobile">
+
+                    <style>
+                      .dropdown-content {
+                        display: none;
+                        position: relative;
+                        background-color: #ccc;
+                        min-width: 150%;
+                        z-index: 100;
+                        top: 0px;
+                        right: 0%;
+                      }
+
+                      .dropdown-content a {
+                        color: black;
+                        padding: 20px 20px;
+                        text-decoration: none;
+                        display: block;
+                      }
+
+                      .dropdown:hover .dropdown-content {
+                        display: block;
+                      }
+                    </style>
+
+                    <div class="dropdown">
+                      <a class="dropbtn">기타</a>
+                      <div class="dropdown-content">
+                        <div><a class="modal-Btn" data-modal-id="modal13">롯데리아</a></div>
+                        <div><a class="modal-Btn" data-modal-id="modal14">마마마라탕</a></div>
+                        <div><a class="modal-Btn" data-modal-id="modal15">맘스터치</a></div>
+                        <div><a class="modal-Btn" data-modal-id="modal16">미스사이공</a></div>
+                        <div><a class="modal-Btn" data-modal-id="modal17">착한 짬뽕</a></div>
+                      </div>
+                    </div>
+                  </ul>
+                  <ul class="sub_mobile">
+
+                    <style>
+                      .dropdown-content {
+                        display: none;
+                        position: relative;
+                        background-color: #ccc;
+                        min-width: 150%;
+                        z-index: 100;
+                        top: 0px;
+                        right: 0%;
+                      }
+
+                      .dropdown-content a {
+                        color: black;
+                        padding: 20px 20px;
+                        text-decoration: none;
+                        display: block;
+                      }
+
+                      .dropdown:hover .dropdown-content {
+                        display: block;
+                      }
+                    </style>
+
+                    <div class="dropdown">
+                      <a class="dropbtn">간식</a>
+                      <div class="dropdown-content">
+                        <div><a class="modal-Btn" data-modal-id="modal18">뚜레쥬르</a></div>
+                        <div><a class="modal-Btn" data-modal-id="modal19">메가 커피</a></div>
+                        <div><a class="modal-Btn" data-modal-id="modal20">스마일 꽈배기</a></div>
+                        <div><a class="modal-Btn" data-modal-id="modal21">컴포즈 커피</a></div>
+                        <div><a class="modal-Btn" data-modal-id="modal22">파리바게트</a></div>
+
+                      </div>
+                    </div>
+                  </ul>
+
+              </ul>
+              </ul>
+              </ul>
+
+              <ul class="nav">
+                <li><a>가격</a>
+                  <ul class="sub_mobile">
+
+                    <style>
+                      .dropdown-content {
+                        display: none;
+                        position: relative;
+                        background-color: #ccc;
+                        min-width: 150%;
+                        z-index: 100;
+                        top: 0px;
+                        right: 0%;
+                      }
+
+                      .dropdown-content a {
+                        color: black;
+                        padding: 20px 20px;
+                        text-decoration: none;
+                        display: block;
+                      }
+
+                      .dropdown:hover .dropdown-content {
+                        display: block;
+                      }
+                    </style>
+
+                    <div class="dropdown">
+                      <a class="dropbtn">0~6000</a>
+                      <div class="dropdown-content">
+                        <div><a class="modal-Btn" data-modal-id="modal1">감탄 떡볶이</a></div>
+                        <div><a class="modal-Btn" data-modal-id="modal9">국수나무</a></div>
+                        <div><a class="modal-Btn" data-modal-id="modal118">뚜레쥬르</a></div>
+                        <div><a class="modal-Btn" data-modal-id="modal19">메가 커피</a></div>
+                        <div><a class="modal-Btn" data-modal-id="modal11">수유리 우동집</a></div>
+                        <div><a class="modal-Btn" data-modal-id="modal20">스마일 꽈배배기</a></div>
+                        <div><a class="modal-Btn" data-modal-id="modal3">우리 할매 떡볶이</a></div>
+                        <div><a class="modal-Btn" data-modal-id="modal4">츄밥</a></div>
+                        <div><a class="modal-Btn" data-modal-id="modal21">컴포즈 커피</a></div>
+                        <div><a class="modal-Btn" data-modal-id="modal22">파리바게트</a></div>
+
+                      </div>
+                    </div>
+                  </ul>
+                  <ul class="sub_mobile">
+
+                    <style>
+                      .dropdown-content {
+                        display: none;
+                        position: relative;
+                        background-color: #ccc;
+                        min-width: 150%;
+                        z-index: 100;
+                        top: 0px;
+                        right: 0%;
+                      }
+
+                      .dropdown-content a {
+                        color: black;
+                        padding: 20px 20px;
+                        text-decoration: none;
+                        display: block;
+                      }
+
+                      .dropdown:hover .dropdown-content {
+                        display: block;
+                      }
+                    </style>
+
+                    <div class="dropdown">
+                      <a class="dropbtn">6000~10000</a>
+                      <div class="dropdown-content">
+                        <div><a class="modal-Btn" data-modal-id="modal2">고고 떡볶이</a></div>
+                        <div><a class="modal-Btn" data-modal-id="modal10">깁밥나라</a></div>
+                        <div><a class="modal-Btn" data-modal-id="modal13">롯데리아</a></div>
+                        <div><a class="modal-Btn" data-modal-id="modal14">마마마라탕</a></div>
+                        <div><a class="modal-Btn" data-modal-id="modal15">맘스터치</a></div>
+                        <div><a class="modal-Btn" data-modal-id="modal16">미스사이공</a></div>
+                        <div><a class="modal-Btn" data-modal-id="modal17">착한 짬뽕</a></div>
+                        <div><a class="modal-Btn" data-modal-id="modal12">토마토 도시락</a></div </div>
+                      </div>
+                  </ul>
+                  <ul class="sub_mobile">
+
+                    <style>
+                      .dropdown-content {
+                        display: none;
+                        position: relative;
+                        background-color: #ccc;
+                        min-width: 150%;
+                        z-index: 100;
+                        top: 0px;
+                        right: 0%;
+                      }
+
+                      .dropdown-content a {
+                        color: black;
+                        padding: 20px 20px;
+                        text-decoration: none;
+                        display: block;
+                      }
+
+                      .dropdown:hover .dropdown-content {
+                        display: block;
+                      }
+                    </style>
+
+                    <div class="dropdown">
+                      <a class="dropbtn">10000~15000</a>
+                      <div class="dropdown-content">
+                        <div><a class="modal-Btn" data-modal-id="modal7">시집 온 닭갈비</a></div>
+                        <div><a class="modal-Btn" data-modal-id="modal6">신의주 순대와 쭈꾸미</a></div>
+                        <div><a class="modal-Btn" data-modal-id="modal8">청학 냉면</a></div>
+
+
+                      </div>
+                    </div>
+                  </ul>
+                  <ul class="sub_mobile">
+
+                    <style>
+                      .dropdown-content {
+                        display: none;
+                        position: relative;
+                        background-color: #ccc;
+                        min-width: 150%;
+                        z-index: 100;
+                        top: 0px;
+                        right: 0%;
+                      }
+
+                      .dropdown-content a {
+                        color: black;
+                        padding: 20px 20px;
+                        text-decoration: none;
+                        display: block;
+                      }
+
+                      .dropdown:hover .dropdown-content {
+                        display: block;
+                      }
+                    </style>
+
+                    <div class="dropdown">
+                      <a class="dropbtn">15000~20000</a>
+                      <div class="dropdown-content">
+                        <!-- <div><a class="modal-Btn" data-modal-id="modal9">국수나무</a></div>
+                                   <div><a class="modal-Btn" data-modal-id="modal10">깁밥나라</a></div>
+                             <div><a class="modal-Btn" data-modal-id="modal11">수유리 우동집</a></div>
+                             <div><a class="modal-Btn" data-modal-id="modal12">토마토 도시락락</a></div> -->
+
+                      </div>
+                    </div>
+                  </ul>
+                  <ul class="sub_mobile">
+
+                    <style>
+                      .dropdown-content {
+                        display: none;
+                        position: relative;
+                        background-color: #ccc;
+                        min-width: 150%;
+                        z-index: 100;
+                        top: 0px;
+                        right: 0%;
+                      }
+
+                      .dropdown-content a {
+                        color: black;
+                        padding: 20px 20px;
+                        text-decoration: none;
+                        display: block;
+                      }
+
+                      .dropdown:hover .dropdown-content {
+                        display: block;
+                      }
+                    </style>
+
+                    <div class="dropdown">
+                      <a class="dropbtn">20000~</a>
+                      <div class="dropdown-content">
+                        <div><a class="modal-Btn" data-modal-id="modal5">보쌈 클라스</a></div>
+
+                      </div>
+                    </div>
+                  </ul>
+                </li>
+              </ul>
+              </ul>
+              <div id="menu">
+                <ul class="nav">
+                  <li><a>평점</a>
+                    <ul class="sub_mobile">
+
+                      <style>
+                        .dropdown-content {
+                          display: none;
+                          position: relative;
+                          background-color: #ccc;
+                          min-width: 150%;
+                          z-index: 100;
+                          top: 0px;
+                          right: 0%;
+                        }
+
+                        .dropdown-content a {
+                          color: black;
+                          padding: 20px 20px;
+                          text-decoration: none;
+                          display: block;
+                        }
+
+                        .dropdown:hover .dropdown-content {
+                          display: block;
+                        }
+                      </style>
+
+                      <div class="dropdown">
+                        <a class="dropbtn">★4.5~5.0</a>
+
+                        <div class="dropdown-content">
+                          <div><a class="modal-Btn" data-modal-id="modal14">마마마라탕</a></div>
+                          <div><a class="modal-Btn" data-modal-id="modal20">스마일 꽈배기</a></div>
+
+
+                        </div>
+                      </div>
+                    </ul>
+                    <ul class="sub_mobile">
+
+                      <style>
+                        .dropdown-content {
+                          display: none;
+                          position: relative;
+                          background-color: #ccc;
+                          min-width: 150%;
+                          z-index: 100;
+                          top: 0px;
+                          right: 0%;
+                        }
+
+                        .dropdown-content a {
+                          color: black;
+                          padding: 20px 20px;
+                          text-decoration: none;
+                          display: block;
+                        }
+
+                        .dropdown:hover .dropdown-content {
+                          display: block;
+                        }
+                      </style>
+
+                      <div class="dropdown">
+                        <a class="dropbtn">★4.0</a>
+                        <div class="dropdown-content">
+
+                          <div><a class="modal-Btn" data-modal-id="modal2">고고 떡볶이</a></div>
+                          <div><a class="modal-Btn" data-modal-id="modal5">보쌈 클라스</a></div>
+                          <div><a class="modal-Btn" data-modal-id="modal7">시집 온 닭갈비</a></div>
+                          <div><a class="modal-Btn" data-modal-id="modal6">신의주 순대와 쭈꾸미</a></div>
+                          <div><a class="modal-Btn" data-modal-id="modal3">우리 할매 떡볶이</a></div>
+                          <div><a class="modal-Btn" data-modal-id="modal17">착한 짬뽕</a></div>
+
+
+                        </div>
+                      </div>
+                    </ul>
+                    <ul class="sub_mobile">
+
+                      <style>
+                        .dropdown-content {
+                          display: none;
+                          position: relative;
+                          background-color: #ccc;
+                          min-width: 150%;
+                          z-index: 100;
+                          top: 0px;
+                          right: 0%;
+                        }
+
+                        .dropdown-content a {
+                          color: black;
+                          padding: 20px 20px;
+                          text-decoration: none;
+                          display: block;
+                        }
+
+                        .dropdown:hover .dropdown-content {
+                          display: block;
+                        }
+                      </style>
+
+                      <div class="dropdown">
+                        <a class="dropbtn">★3.5</a>
+                        <div class="dropdown-content">
+
+                          <div><a class="modal-Btn" data-modal-id="modal10">김밥나라</a></div>
+                          <div><a class="modal-Btn" data-modal-id="modal13">롯데리아</a></div>
+                          <div><a class="modal-Btn" data-modal-id="modal16">미스사이공</a></div>
+                          <div><a class="modal-Btn" data-modal-id="modal11">수유리 우동집</a></div>
+                          <div><a class="modal-Btn" data-modal-id="modal21">컴포즈 커피</a></div>
+                          <div><a class="modal-Btn" data-modal-id="modal22">파리바게트</a></div>
+
+                        </div>
+                      </div>
+                    </ul>
+                    <ul class="sub_mobile">
+
+                      <style>
+                        .dropdown-content {
+                          display: none;
+                          position: relative;
+                          background-color: #ccc;
+                          min-width: 150%;
+                          z-index: 100;
+                          top: 0px;
+                          right: 0%;
+                        }
+
+                        .dropdown-content a {
+                          color: black;
+                          padding: 20px 20px;
+                          text-decoration: none;
+                          display: block;
+                        }
+
+                        .dropdown:hover .dropdown-content {
+                          display: block;
+                        }
+                      </style>
+
+                      <div class="dropdown">
+                        <a class="dropbtn">★3.0~3.5</a>
+                        <div class="dropdown-content">
+
+                          <div><a class="modal-Btn" data-modal-id="modal15">맘스터치</a></div>
+                          <div><a class="modal-Btn" data-modal-id="modal9">메가 커피</a></div>
+                          <div><a class="modal-Btn" data-modal-id="modal8">청학 냉면</a></div>
+                          <div><a class="modal-Btn" data-modal-id="modal4">츄밥</a></div>
+
+
+
+                        </div>
+                      </div>
+                    </ul>
+                    <ul class="sub_mobile">
+
+                      <style>
+                        .dropdown-content {
+                          display: none;
+                          position: relative;
+                          background-color: #ccc;
+                          min-width: 150%;
+                          z-index: 100;
+                          top: 0px;
+                          right: 0%;
+                        }
+
+                        .dropdown-content a {
+                          color: black;
+                          padding: 20px 20px;
+                          text-decoration: none;
+                          display: block;
+                        }
+
+                        .dropdown:hover .dropdown-content {
+                          display: block;
+                        }
+                      </style>
+
+                      <div class="dropdown">
+                        <a class="dropbtn">★1.0~2.5</a>
+                        <div class="dropdown-content">
+                          <div><a class="modal-Btn" data-modal-id="modal9">국수나무</a></div>
+                          <div><a class="modal-Btn" data-modal-id="modal18">뚜레쥬르</a></div>
+                          <div><a class="modal-Btn" data-modal-id="modal12">토마토 도시락</a></div>
+                          <div><a class="modal-Btn" data-modal-id="modal1">감탄 떡볶이</a></div>
+
+
+
+                        </div>
+                      </div>
+                    </ul>
+                  </li>
+                </ul>
+                </ul>
+                <div>
+                  <div onclick="history.back();" class="close"></div>
+                </div>
+              </div>
+
+            </div>
+        </h3>
+        <h3 style="text-align: center; position: relative; top: 1500px;">
+        </h3>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!--모달창 코드 시작-->
+
+  <div>
+    <h4>
+      <dialog id="modal1" class="modal">
+        <iframe src="https://gamtan.replit.app" class="chat_iframe">감탄 떡볶이</iframe>
+        <form method="dialog">
+          <button>닫기</button>
+        </form>
+      </dialog>
+    </h4>
+  </div>
+
+  <div>
+    <h4>
+      <dialog id="modal2" class="modal">
+        <iframe src="
+          https://gogopizza.replit.app" class="chat_iframe">고고 떡볶이</iframe>
+        <form method="dialog">
+          <button>닫기</button>
+        </form>
+      </dialog>
+    </h4>
+  </div>
+
+  <div>
+    <h4>
+      <dialog id="modal3" class="modal">
+        <iframe src="
+          https://mygrandma.replit.app" class="chat_iframe">우리 할매 떡볶이</iframe>
+        <form method="dialog">
+          <button>닫기</button>
+        </form>
+      </dialog>
+    </h4>
+  </div>
+
+  <div>
+    <h4>
+      <dialog id="modal4" class="modal">
+        <iframe src="
+          https://cubob.replit.app" class="chat_iframe">츄밥</iframe>
+        <form method="dialog">
+          <button>닫기</button>
+        </form>
+      </dialog>
+    </h4>
+  </div>
+
+  <div>
+    <h4>
+      <dialog id="modal5" class="modal">
+        <iframe src="
+          https://bosamclass.replit.app" class="chat_iframe">보쌈 클라스</iframe>
+        <form method="dialog">
+          <button>닫기</button>
+        </form>
+      </dialog>
+    </h4>
+  </div>
+
+  <div>
+    <h4>
+      <dialog id="modal6" class="modal">
+        <iframe src="
+          https://siniju.replit.app" class="chat_iframe">신의주 순대와 쭈꾸미</iframe>
+        <form method="dialog">
+          <button>닫기</button>
+        </form>
+      </dialog>
+    </h4>
+  </div>
+
+  <div>
+    <h4>
+      <dialog id="modal7" class="modal">
+        <iframe src="
+          https://marriagehen.replit.app" class="chat_iframe">시집 온 닭갈비</iframe>
+        <form method="dialog">
+          <button>닫기</button>
+        </form>
+      </dialog>
+    </h4>
+  </div>
+
+  <div>
+    <h4>
+      <dialog id="modal8" class="modal">
+        <iframe src="
+          https://cnaengmyeon.replit.app" class="chat_iframe">청학 냉면</iframe>
+        <form method="dialog">
+          <button>닫기</button>
+        </form>
+      </dialog>
+    </h4>
+  </div>
+
+  <div>
+    <h4>
+      <dialog id="modal9" class="modal">
+        <iframe src="
+          https://gugsunamu.replit.app" class="chat_iframe">국수나무</iframe>
+        <form method="dialog">
+          <button>닫기</button>
+        </form>
+      </dialog>
+    </h4>
+  </div>
+
+  <div>
+    <h4>
+      <dialog id="modal10" class="modal">
+        <iframe src="https://gimbobnara.replit.app/" class="chat_iframe">김밥나라</iframe>
+        <form method="dialog">
+          <button>닫기</button>
+        </form>
+      </dialog>
+    </h4>
+  </div>
+
+  <div>
+    <h4>
+      <dialog id="modal11" class="modal">
+        <iframe src="
+          https://suyuri.replit.app" class="chat_iframe">수유리 우동집</iframe>
+        <form method="dialog">
+          <button>닫기</button>
+        </form>
+      </dialog>
+    </h4>
+  </div>
+
+  <div>
+    <h4>
+      <dialog id="modal12" class="modal">
+        <iframe src="https://tomatodosirag.replit.app" class="chat_iframe">토마토 도시락</iframe>
+        <form method="dialog">
+          <button>닫기</button>
+        </form>
+      </dialog>
+    </h4>
+  </div>
+
+  <div>
+    <h4>
+      <dialog id="modal13" class="modal">
+        <iframe src="
+          https://cderia.replit.app" class="chat_iframe">롯데리아</iframe>
+        <form method="dialog">
+          <button>닫기</button>
+        </form>
+      </dialog>
+    </h4>
+  </div>
+
+  <div>
+    <h4>
+      <dialog id="modal14" class="modal">
+        <iframe src="
+          https://mamamaratang.replit.app
+" class="chat_iframe">마마마라탕</iframe>
+        <form method="dialog">
+          <button>닫기</button>
+        </form>
+      </dialog>
+    </h4>
+  </div>
+
+
+  <div>
+    <h4>
+      <dialog id="modal15" class="modal">
+        <iframe src="
+          https://mamstoch.replit.app" class="chat_iframe">맘스터치</iframe>
+        <form method="dialog">
+          <button>닫기</button>
+        </form>
+      </dialog>
+    </h4>
+  </div>
+
+  <div>
+    <h4>
+      <dialog id="modal16" class="modal">
+        <iframe src="https://miss420.replit.app" class="chat_iframe">미스사이공</iframe>
+        <form method="dialog">
+          <button>닫기</button>
+        </form>
+      </dialog>
+    </h4>
+  </div>
+
+  <div>
+    <h4>
+      <dialog id="modal17" class="modal">
+        <iframe src="
+          https://kindzzampong.replit.app" class="chat_iframe">착한 짬뽕</iframe>
+        <form method="dialog">
+          <button>닫기</button>
+        </form>
+      </dialog>
+    </h4>
+  </div>
+
+  <div>
+    <h4>
+      <dialog id="modal18" class="modal">
+        <iframe src="https://touslesjours.replit.app/" class="chat_iframe">뚜레쥬르</iframe>
+        <form method="dialog">
+          <button>닫기</button>
+        </form>
+      </dialog>
+    </h4>
+  </div>
+
+  <div>
+    <h4>
+      <dialog id="modal19" class="modal">
+        <iframe src="https://megacoffe.replit.app" class="chat_iframe">메가 커피</iframe>
+        <form method="dialog">
+          <button>닫기</button>
+        </form>
+      </dialog>
+    </h4>
+  </div>
+
+  <div>
+    <h4>
+      <dialog id="modal20" class="modal">
+        <iframe src="
+          https://smileqa.replit.app" class="chat_iframe">스마일 꽈배기</iframe>
+        <form method="dialog">
+          <button>닫기</button>
+        </form>
+      </dialog>
+    </h4>
+  </div>
+
+  <div>
+    <h4>
+      <dialog id="modal21" class="modal">
+        <iframe src="
+          https://composecof.replit.app" class="chat_iframe">컴포즈 커피</iframe>
+        <form method="dialog">
+          <button>닫기</button>
+        </form>
+      </dialog>
+    </h4>
+  </div>
+
+  <div>
+    <h4>
+      <dialog id="modal22" class="modal">
+        <iframe src="
+          https://parispang.replit.app" class="chat_iframe">파리바게트</iframe>
+        <form method="dialog">
+          <button>닫기</button>
+        </form>
+      </dialog>
+    </h4>
+  </div>
+
+
+
+  <!-- 모달창 코드 끝-->
+
+  </script>
+  <div style="position: relative; z-index: 1;">
+    <div id="map" style="width:1535px;height:735px;"></div>
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=bec6c8c1041886d18cde8be28b740c0d">
+    </script>
+
+    <script>
+      var container = document.getElementById('map');
+      var options = {
+        center: new kakao.maps.LatLng(37.71008689596109, 127.11998994480761),
+        level: 3
+      };
+
+
+      var map = new kakao.maps.Map(container, options);
+
+
+
+
+
+      // 마커들과 인포윈도우 내용들 정리 
+      var positions = [
+        {
+          title: '츄밥 청학점',
+          content: '<div class="wrap">' +
+            '    <div class="info">' +
+            '        <div class="title">' +
+            '            츄밥' +
+            '        <div class="body">' +
+            '            <div class="img">' +
+            '                <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMDAxMThfMjgg%2FMDAxNTc5MzQyNzM3ODU1.5V62vlKX0i7d599QkwJtK0YhFKTJoHHO-yE2VyCI_P4g.Mm72rq7eJdzZX5yYJvvtJS89Cg9cAAyklJWueDQFYfEg.JPEG.jej11513145%2F1579342737383.jpg" width="73" height="70">' +
+            '           </div>' +
+            '            <div class="desc">' +
+            '                <div class="별점">별점 : ★3.0</div>' +
+            '                <div class="상세설명">간단히 해결하기 좋은 가성비 밥집</div>' +
+            '                <div><a href="https://cubob.replit.app" target="_blank" class="link">상세 페이지</a></div>' +
+            '            </div>' +
+            '        </div>' +
+            '    </div>' +
+            '</div>',
+          latlng: new kakao.maps.LatLng(37.7096122, 127.119577)
+        },
+        {
+          title: '미스사이공 청학점',
+          content: '<div class="wrap">' +
+            '    <div class="info">' +
+            '        <div class="title">' +
+            '            미스사이공' +
+            '        <div class="body">' +
+            '            <div class="img">' +
+            '                <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNDA0MTZfMjEy%2FMDAxNzEzMjc4NTI5NzUy.OdqMOh1LoJFgLqvy0wwLcMABdajd7_ksf0-zYLVDvWAg.cPvQyyBWz4673Lu2eyNVi0juBo5hdxFIBjBzY-pV3FQg.JPEG%2FKakaoTalk_20240308_165243676_21.jpg" width="73" height="70">' +
+            '           </div>' +
+            '            <div class="desc">' +
+            '                <div class="별점">별점 : ★3.5</div>' +
+            '                <div class="상세설명">양이 적당하고 빠르게 식사 가능한 국수집</div>' +
+            '                <div><a href="https://miss420.replit.app" target="_blank" class="link">상세 페이지</a></div>' +
+            '            </div>' +
+            '        </div>' +
+            '    </div>' +
+            '</div>',
+          latlng: new kakao.maps.LatLng(37.70816240000001, 127.118547)
+        },
+        {
+          title: '김밥나라 청학점',
+          content: '<div class="wrap">' +
+            '    <div class="info">' +
+            '        <div class="title">' +
+            '            김밥나라' +
+            '        <div class="body">' +
+            '            <div class="img">' +
+            '                <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMjEyMTNfNjcg%2FMDAxNjcwOTM3MjE3MDM0.bO7iLrnZprXkEo2xvEQyO1KJ5G_qCOqxY9zxFIAdadIg.Mkt1JJPaI-QfK5MJloAJZJEi4HW21WYBnTaV8gCBmdwg.JPEG.neoul0765%2F1670937211822.jpg" width="73" height="70">' +
+            '           </div>' +
+            '            <div class="desc">' +
+            '                <div class="별점">별점 : ★3.5</div>' +
+            '                <div class="상세설명"> 메뉴가 다양한 야자쌤들 단골집  </div>' +
+            '                <div><a href="https://gimbobnara.replit.app/" target="_blank" class="link">상세 페이지</a></div>' +
+            '            </div>' +
+            '        </div>' +
+            '    </div>' +
+            '</div>',
+          latlng: new kakao.maps.LatLng(37.70885274253643, 127.11790474428608)
+        },
+        {
+          title: '신의주 순대와 쭈꾸미 청학점',
+          content: '<div class="wrap">' +
+            '    <div class="info">' +
+            '        <div class="title">' +
+            '            신의주 순대와 쭈꾸미' +
+            '        <div class="body">' +
+            '            <div class="img">' +
+            '                <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMjExMTNfMjM1%2FMDAxNjY4MzMzOTMzNTYz.jgRyJ5bXbao49KHhZUbwPV_unNV8qUMjFwfxr5q6dYEg.LsBZCKC98LJ1LQxzTLOmRQMWZZu-h7JiS-OHhSXETOEg.JPEG.0malang%2Foutput_1252979648.jpg" width="73" height="70">' +
+            '           </div>' +
+            '            <div class="desc">' +
+            '                <div class="별점">별점 : ★4.0</div>' +
+            '                <div class="상세설명">비싸지만 든든한 국밥집</div>' +
+            '                <div><a href="https://siniju.replit.app" target="_blank" class="link">상세 페이지</a></div>' +
+            '            </div>' +
+            '        </div>' +
+            '    </div>' +
+            '</div>',
+          latlng: new kakao.maps.LatLng(37.70829637187048, 127.11896866857171)
+        },
+        {
+          title: '착한짬뽕',
+          content: '<div class="wrap">' +
+            '    <div class="info">' +
+            '        <div class="title">' +
+            '            착한짬뽕' +
+            '        <div class="body">' +
+            '            <div class="img">' +
+            '                <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNDA0MjRfMzAw%2FMDAxNzEzOTQxNTczODIy.OmROOzUbBnjTDG-IPbBexY5TzrXQLjIgeFSYdN4t0GYg.7sSRIduVx2dkm1lhG6UkTyvHFZql98t0xCRHqn0snPwg.JPEG%2FIMG%25A3%25DF20240422%25A3%25DF44.jpg" width="73" height="70">' +
+            '           </div>' +
+            '            <div class="desc">' +
+            '                <div class="별점">별점 : ★4.0</div>' +
+            '                <div class="상세설명">가성비 있는 간짜장 맛집</div>' +
+            '                <div><a href="https://kindzzampong.replit.app" target="_blank" class="link">상세 페이지</a></div>' +
+            '            </div>' +
+            '        </div>' +
+            '    </div>' +
+            '</div>',
+          latlng: new kakao.maps.LatLng(37.70797854279203, 127.1183600737323)
+        },
+        {
+          title: '롯데리아',
+          content: '<div class="wrap">' +
+            '    <div class="info">' +
+            '        <div class="title">' +
+            '            롯데리아' +
+            '        <div class="body">' +
+            '            <div class="img">' +
+            '                <img src="https://search.pstatic.net/common/?src=https%3A%2F%2Fmyplace-phinf.pstatic.net%2F20200917_257%2F1600313901755p5jNJ_JPEG%2Fupload_16f510589bbcc87912fb971b560cf2b0.jpg%3Ftype%3Dw1500_60_sharpen" width="73" height="70">' +
+            '           </div>' +
+            '            <div class="desc">' +
+            '                <div class="별점">별점 : ★3.5</div>' +
+            '                <div class="상세설명">프랜차이즈 그 맛. 야채가 아삭함</div>' +
+            '                <div><a href="https://cderia.replit.app" target="_blank" class="link">상세 페이지</a></div>' +
+            '            </div>' +
+            '        </div>' +
+            '    </div>' +
+            '</div>',
+          latlng: new kakao.maps.LatLng(37.708584897246176, 127.11803198657711)
+        },
+        {
+          title: '우리할매떡볶이',
+          content: '<div class="wrap">' +
+            '    <div class="info">' +
+            '        <div class="title">' +
+            '            우리할매떡볶이' +
+            '        <div class="body">' +
+            '            <div class="img">' +
+            '                <img src="https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20240123_175%2F17060181069908sRu4_JPEG%2FKakaoTalk_20240123_225221792_01.jpg" width="73" height="70">' +
+            '           </div>' +
+            '            <div class="desc">' +
+            '                <div class="별점">별점 : ★4.0</div>' +
+            '                <div class="상세설명">맵찔이는 밀떡 순한맛 시키세요</div>' +
+            '                <div><a href="https://mygrandma.replit.app" target="_blank" class="link">상세 페이지</a></div>' +
+            '            </div>' +
+            '        </div>' +
+            '    </div>' +
+            '</div>',
+          latlng: new kakao.maps.LatLng(37.708235304591916, 127.119418118284)
+        },
+        {
+          title: '국수나무',
+          content: '<div class="wrap">' +
+            '    <div class="info">' +
+            '        <div class="title">' +
+            '            국수나무' +
+            '        <div class="body">' +
+            '            <div class="img">' +
+            '                <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMjA2MTBfMjAg%2FMDAxNjU0ODI1MzY1Mzgy.CbGZuirn3xFHD76UCeSNJJmNBxo5cEKFo4JNW3jQIBog.EavplkZu7KNvMZ5DbCDi6nNp0bQxwzi1t8WmoYiTfUkg.JPEG.kdsey21cc%2FKakaoTalk_20220610_093201138.jpg" width="73" height="70">' +
+            '           </div>' +
+            '            <div class="desc">' +
+            '                <div class="별점">별점 : ★1.0</div>' +
+            '                <div class="상세설명">더 좋은 대체제가 있는데 왜 가시죠?</div>' +
+            '                <div><a href="https://gugsunamu.replit.app" target="_blank" class="link">상세 페이지</a></div>' +
+            '            </div>' +
+            '        </div>' +
+            '    </div>' +
+            '</div>',
+          latlng: new kakao.maps.LatLng(37.708717823645664, 127.11903034631247)
+        },
+        {
+          title: '토마토 도시락',
+          content: '<div class="wrap">' +
+            '    <div class="info">' +
+            '        <div class="title">' +
+            '            토마토 도시락' +
+            '        <div class="body">' +
+            '            <div class="img">' +
+            '                <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTA5MTZfOTYg%2FMDAxNjMxNzgxMTU3Mzg1.sQjK1Kn2sq-bqoMT1W_I9hP7pC0dnpJh0LTbIy2uBLAg.AVXq7oo65Q-_YFDxdTSWptWFN-xXpRslzpJDDBcqMwsg.JPEG.chw134%2FIMG_6323.JPG" width="73" height="70">' +
+            '           </div>' +
+            '            <div class="desc">' +
+            '                <div class="별점">별점 : ★2.0</div>' +
+            '                <div class="상세설명">급식 같은 맛. 면은 먹지마세요</div>' +
+            '                <div><a href="https://tomatodosirag.replit.app" target="_blank" class="link">상세 페이지</a></div>' +
+            '            </div>' +
+            '        </div>' +
+            '    </div>' +
+            '</div>',
+          latlng: new kakao.maps.LatLng(37.70826862335945, 127.11915358901024)
+        },
+        {
+          title: '수유리 우동집',
+          content: '<div class="wrap">' +
+            '    <div class="info">' +
+            '        <div class="title">' +
+            '            수유리 우동집' +
+            '        <div class="body">' +
+            '            <div class="img">' +
+            '                <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMzA5MTNfMjY4%2FMDAxNjk0NTcwOTM2NzM0.ui44t3vJF7x3Fzd-gQUKL5TiiDW2n6JzU9fIklrdj08g.lcuviztLupQeX9hCwC2Y8TtmNOFhpzlUp-a5Ti8HLDgg.JPEG.seohee_joo%2FKakaoTalk_20230912_084319636_15.jpg" width="73" height="70">' +
+            '           </div>' +
+            '            <div class="desc">' +
+            '                <div class="별점">별점 : ★3.5</div>' +
+            '                <div class="상세설명">보통 맛. 사람에 따라 후추맛이 강함</div>' +
+            '                <div><a href="https://suyuri.replit.app" target="_blank" class="link">상세 페이지</a></div>' +
+            '            </div>' +
+            '        </div>' +
+            '    </div>' +
+            '</div>',
+          latlng: new kakao.maps.LatLng(37.70801759713593, 127.11735451318708)
+        },
+        {
+          title: '청학 냉면',
+          content: '<div class="wrap">' +
+            '    <div class="info">' +
+            '        <div class="title">' +
+            '            청학 냉면' +
+            '        <div class="body">' +
+            '            <div class="img">' +
+            '                <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMzEwMjlfNiAg%2FMDAxNjk4NTM3Njg5NDky.eVfYmVT3rm5arjxtpoDMBUvcRN35XAvV19NmIZ_RyeEg.urFkeIyDYoypbgc8PUbtluEZ7neGDy2-4QLOau2LBhYg.JPEG.babucjcj%2FKakaoTalk_20231020_182235742_05.jpg" width="73" height="70">' +
+            '           </div>' +
+            '            <div class="desc">' +
+            '                <div class="별점">별점 : ★3.0</div>' +
+            '                <div class="상세설명">비싼데 그 정도는 아닌 맛</div>' +
+            '                <div><a href="https://cnaengmyeon.replit.app" target="_blank" class="link">상세 페이지</a></div>' +
+            '            </div>' +
+            '        </div>' +
+            '    </div>' +
+            '</div>',
+          latlng: new kakao.maps.LatLng(37.70784278198788, 127.11918738444568)
+        },
+        {
+          title: '감탄떡볶이',
+          content: '<div class="wrap">' +
+            '    <div class="info">' +
+            '        <div class="title">' +
+            '            감탄떡볶이' +
+            '        <div class="body">' +
+            '            <div class="img">' +
+            '                <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMDAzMDFfMjQ4%2FMDAxNTgzMDQyMjMyMjEz.sVjrTV6dvkCUaYJRLDHijiuS2xZBsHD4LsmIwTqRdzog._TVwQS2nPKmOSNNJ1DlElzwKRATINkY4tEG4O8SUHO0g.JPEG.pinelemon%2F1583042234610.jpg" width="73" height="70">' +
+            '           </div>' +
+            '            <div class="desc">' +
+            '                <div class="별점">별점 : ★2.5</div>' +
+            '                <div class="상세설명">사장님이 외향적이심</div>' +
+            '                <div><a href="https://gamtan.replit.app"target="_blank" class="link">상세 페이지</a></div>' +
+            '            </div>' +
+            '        </div>' +
+            '    </div>' +
+            '</div>',
+          latlng: new kakao.maps.LatLng(37.708855401000285, 127.11801868366885)
+        },
+        {
+          title: '고고 떡볶이',
+          content: '<div class="wrap">' +
+            '    <div class="info">' +
+            '        <div class="title">' +
+            '            고고 떡볶이' +
+            '        <div class="body">' +
+            '            <div class="img">' +
+            '                <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTA1MjJfODYg%2FMDAxNjIxNjk1NTc0MzEx.N-KQciJQkIHzkozkvicEezeoXeBZQ-daUJXElZce9w0g.Mnn077mUQL3lBPL7eOw6DRtawv96gGcqO9ywJYu81MIg.JPEG.1210soyo%2F1.jpg" width="73" height="70">' +
+            '           </div>' +
+            '            <div class="desc">' +
+            '                <div class="별점">별점 : ★4.0</div>' +
+            '                <div class="상세설명">친구들과 n빵 하면 좋은 피자, 떡볶이 세트</div>' +
+            '                <div><a href="https://gogopizza.replit.app" target="_blank" class="link">상세 페이지</a></div>' +
+            '            </div>' +
+            '        </div>' +
+            '    </div>' +
+            '</div>',
+          latlng: new kakao.maps.LatLng(37.707629396567064, 127.11926916090756)
+        },
+        {
+          title: '보쌈 클라스',
+          content: '<div class="wrap">' +
+            '    <div class="info">' +
+            '        <div class="title">' +
+            '            보쌈 클라스' +
+            '        <div class="body">' +
+            '            <div class="img">' +
+            '                <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMzA4MDJfMTky%2FMDAxNjkwOTAyNDMzMDg0.MEE8KsqzP8NFbF6Kc4DoScbjTO8vy-75G250Wj9gL9Ug.zyEfNlInfmaZgUGWJkz4yPnExKT54ALoeGENg9s74VAg.JPEG.mkj1104%2FIMG_1148.jpg" width="73" height="70">' +
+            '           </div>' +
+            '            <div class="desc">' +
+            '                <div class="별점">별점 : ★4.0</div>' +
+            '                <div class="상세설명">친구들과 n빵해서 먹는 보쌈 맛집</div>' +
+            '                <div><a href="https://bosamclass.replit.app" target="_blank" class="link">상세 페이지</a></div>' +
+            '            </div>' +
+            '        </div>' +
+            '    </div>' +
+            '</div>',
+          latlng: new kakao.maps.LatLng(37.70676207556788, 127.11957676091279)
+        },
+        {
+          title: '스마일꽈배기',
+          content: '<div class="wrap">' +
+            '    <div class="info">' +
+            '        <div class="title">' +
+            '            스마일꽈배기' +
+            '        <div class="body">' +
+            '            <div class="img">' +
+            '                <img src="https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20191217_283%2F15765834737423QU8B_JPEG%2FUMXsUEEQZ8Xxw0wwGwIg8f8g.jpeg.jpg" width="73" height="70">' +
+            '           </div>' +
+            '            <div class="desc">' +
+            '                <div class="별점">별점 : ★5.0</div>' +
+            '                <div class="상세설명">이렇게 맛있는 꽈배기, 도너츠, 핫도그는 처음</div>' +
+            '                <div><a href="https://smileqa.replit.app" target="_blank" class="link">상세 페이지</a></div>' +
+            '            </div>' +
+            '        </div>' +
+            '    </div>' +
+            '</div>',
+          latlng: new kakao.maps.LatLng(37.70804100879565, 127.118869830542)
+        },
+        {
+          title: '컴포즈 커피',
+          content: '<div class="wrap">' +
+            '    <div class="info">' +
+            '        <div class="title">' +
+            '            컴포즈 커피' +
+            '        <div class="body">' +
+            '            <div class="img">' +
+            '                <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMjAzMjFfMTI2%2FMDAxNjQ3ODcwMzAwMTYx.3D0FbLdf9mV4eGV1pF1_iJCpcK0yqMTDacKncEq1FHIg.cbNjRbkgoDC--m5l88VJ126H9JSc4MGaZIspcNNIR1Qg.JPEG.pinelemon%2F20220320%25A3%25DF111751.jpg" width="73" height="70">' +
+            '           </div>' +
+            '            <div class="desc">' +
+            '                <div class="별점">별점 : ★3.5</div>' +
+            '                <div class="상세설명">스무디가 괜찮음</div>' +
+            '                <div><a href="https://composecof.replit.app" target="_blank" class="link">상세 페이지</a></div>' +
+            '            </div>' +
+            '        </div>' +
+            '    </div>' +
+            '</div>',
+          latlng: new kakao.maps.LatLng(37.70852028286944, 127.11880236586939)
+        },
+        {
+          title: '메가커피',
+          content: '<div class="wrap">' +
+            '    <div class="info">' +
+            '        <div class="title">' +
+            '            메가커피' +
+            '        <div class="body">' +
+            '            <div class="img">' +
+            '                <img src="https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20220426_3%2F1650962193389dqQEn_PNG%2F%25B3%25B2%25BE%25E7%25C1%25D6%25C3%25BB%25C7%25D0%25C1%25A1%25BF%25DC%25BA%25CE1.PNG" width="73" height="70">' +
+            '           </div>' +
+            '            <div class="desc">' +
+            '                <div class="별점">별점 : ★3.0</div>' +
+            '                <div class="상세설명">딸기 라떼가 맛있지만, 좀 오래걸림</div>' +
+            '                <div><a href="https://megacoffe.replit.app" target="_blank" class="link">상세 페이지</a></div>' +
+            '            </div>' +
+            '        </div>' +
+            '    </div>' +
+            '</div>',
+          latlng: new kakao.maps.LatLng(37.7085459588555, 127.11866691431413)
+        },
+        {
+          title: '맘스터치 청학점',
+          content: '<div class="wrap">' +
+            '    <div class="info">' +
+            '        <div class="title">' +
+            '            맘스터치' +
+            '        <div class="body">' +
+            '            <div class="img">' +
+            '                <img src="https://search.pstatic.net/common/?src=https://mblogthumb-phinf.pstatic.net/MjAyMDA1MjlfMTAw/MDAxNTkwNzYxMTUyMDUy.8TFf56Z6AgFYSFL5dPBAoLqZGsE3pv54QB9-rL4l5wkg.OvZttm4XEbJ6FzI_UiKJhcdvqFKmYoWpOyZFA9r0-Fog.JPEG.monica9203/1590761151137.jpg?type=w800" width="73" height="70">' +
+            '           </div>' +
+            '            <div class="desc">' +
+            '                <div class="별점">별점 : ★3.5</div>' +
+            '                <div class="상세설명">시장이 반찬인 햄버거 가게</div>' +
+            '                <div><a href="https://mamstoch.replit.app" target="_blank" class="link">상세 페이지</a></div>' +
+            '            </div>' +
+            '        </div>' +
+            '    </div>' +
+            '</div>',
+          latlng: new kakao.maps.LatLng(37.70811636527594, 127.11861977380788)
+        },
+        {
+          title: '시집 온 닭갈비',
+          content: '<div class="wrap">' +
+            '    <div class="info">' +
+            '        <div class="title">' +
+            '            시집 온 닭갈비' +
+            '        <div class="body">' +
+            '            <div class="img">' +
+            '                <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMzA4MjdfMTMy%2FMDAxNjkzMTAyNTc2NDQ3.lvLmA8oHyS8tN-jjRM-f6xkiAp9FuBYvkIQwH5eT7KIg.sBsv2ktYpk-g3y-dRDN6ReY7o1CSZj3moIOFDsZFySkg.JPEG.lynn1017%2F20230825%25A3%25DF181607.jpg" width="73" height="70">' +
+            '           </div>' +
+            '            <div class="desc">' +
+            '                <div class="별점">별점 : ★4.0</div>' +
+            '                <div class="상세설명">비싸지만 맛있는 한끼</div>' +
+            '                <div><a href="https://marriagehen.replit.app" target="_blank" class="link">상세 페이지</a></div>' +
+            '            </div>' +
+            '        </div>' +
+            '    </div>' +
+            '</div>',
+          latlng: new kakao.maps.LatLng(37.70840718108522, 127.11856633147607)
+        },
+        {
+          title: '파리바게뜨',
+          content: '<div class="wrap">' +
+            '    <div class="info">' +
+            '        <div class="title">' +
+            '            파리바게뜨' +
+            '        <div class="body">' +
+            '            <div class="img">' +
+            '                <img src="https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20240311_197%2F1710142585640k2W4l_JPEG%2F20240311_163457.jpg" width="73" height="70">' +
+            '           </div>' +
+            '            <div class="desc">' +
+            '                <div class="별점">별점 : ★3.5</div>' +
+            '                <div class="상세설명">간단하게 해결가능</div>' +
+            '                <div><a href="https://parispang.replit.app" target="_blank" class="link">상세 페이지</a></div>' +
+            '            </div>' +
+            '        </div>' +
+            '    </div>' +
+            '</div>',
+          latlng: new kakao.maps.LatLng(37.70833756490482, 127.11943322793198)
+        },
+        {
+          title: '마마마라탕 청학점',
+          content: '<div class="wrap">' +
+            '    <div class="info">' +
+            '        <div class="title">' +
+            '            마마마라탕 청학점' +
+            '        <div class="body">' +
+            '            <div class="img">' +
+            '                <img src="https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20220508_58%2F165196230845768Fye_JPEG%2FKakaoTalk_20220508_072444959.jpg" width="73" height="70">' +
+            '           </div>' +
+            '            <div class="desc">' +
+            '                <div class="별점">별점 : ★4.5</div>' +
+            '                <div class="상세설명">꿔바로우가 맛있음</div>' +
+            '                <div><a href="https://mamamaratang.replit.app" target="_blank" class="link">상세 페이지</a></div>' +
+            '            </div>' +
+            '        </div>' +
+            '    </div>' +
+            '</div>',
+          latlng: new kakao.maps.LatLng(37.70914733428806, 127.11508860580818)
+        },
+        {
+          title: '뚜레쥬르 청학점',
+          content: '<div class="wrap">' +
+            '    <div class="info">' +
+            '        <div class="title">' +
+            '            뚜레쥬르 청학점' +
+            '        <div class="body">' +
+            '            <div class="img">' +
+            '                <img src=https://search.pstatic.net/common/?autoRotate=true&quality=95&type=w750&src=http%3A%2F%2Fblogfiles.naver.net%2FMjAxOTExMTlfOTkg%2FMDAxNTc0MTY2MjQzMjYz.dfBuHdcuC7UheuEqI05hD3Mue_FkPdniSHgihv8DLAIg.blH7vap-BEWb3Ql4GFzLEe11VPM7041VsBSyxSQrtHcg.JPEG.pinelemon%2F1574166246994.jpg" width="73" height="70">' +
+            '           </div>' +
+            '            <div class="desc">' +
+            '                <div class="별점">별점 : ★2.0</div>' +
+            '                <div class="상세설명">프렌차이즈의 그 맛</div>' +
+            '                <div><a href=" https://TousLesJours.replit.app" target="_blank" class="link">상세 페이지</a></div>' +
+            '            </div>' +
+            '        </div>' +
+            '    </div>' +
+            '</div>',
+          latlng: new kakao.maps.LatLng(37.70865855003938, 127.11930430815552)
+        }
+      ];
+
+      // 마커 이미지의 이미지 주소입니다
+      var imageSrc = "https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/markerStar.png";
+      var a = 0;
+      for (var i = 0; i < positions.length; i++) {
+
+        // 마커 이미지의 이미지 크기 입니다
+        var imageSize = new kakao.maps.Size(24, 35);
+
+        // 마커 이미지를 생성합니다    
+        var markerImage = new kakao.maps.MarkerImage(imageSrc, imageSize);
+
+        // 마커를 생성합니다
+        var marker = new kakao.maps.Marker({
+          map: map, // 마커를 표시할 지도
+          position: positions[i].latlng, // 마커를 표시할 위치
+          title: positions[i].title, // 마커의 타이틀, 마커에 마우스를 올리면 타이틀이 표시됩니다
+          image: markerImage // 마커 이미지 
+        });
+
+        infowindow = new kakao.maps.InfoWindow({
+          content: positions[i].content,
+          removable: positions[i].removable
+        });
+        // 마커에 이벤트를 등록하는 함수 만들고 즉시 호출하여 클로저를 만듭니다
+        // 클로저를 만들어 주지 않으면 마지막 마커에만 이벤트가 등록됩니다
+        (function (marker, infowindow) {
+          // 마커에 mouseover 이벤트를 등록하고 마우스 오버 시 인포윈도우를 표시합니다 
+          kakao.maps.event.addListener(marker, 'click', function () {
+            if (a == 0) {
+              infowindow.open(map, marker);
+              a = 1;
+            }
+            else {
+              infowindow.close();
+              a = 0;
+            }
+
+
+          });
+
+        })(marker, infowindow);
+      }
+
+
+
+
+
+    </script>
+
+
+  </div>
+
+
+
+</body>
+
+<script>
+  /*모달창*/
+
+
+  const modalBtns = document.querySelectorAll(".modal-Btn");
+  const modals = document.querySelectorAll(".modal");
+  let isDragging = false;
+  let offsetX = 0;
+  let offsetY = 0;
+  let currentModal = null;
+
+  modalBtns.forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      const modalId = this.getAttribute("data-modal-id");
+      const modal = document.getElementById(modalId);
+      if (modal) {
+        modal.showModal();
+        currentModal = modal;
+      }
+    });
+  });
+
+  // 닫기 버튼에 대한 이벤트 핸들러 추가
+  document.querySelectorAll(".modal > form > button").forEach(function (button) {
+    button.addEventListener("click", function () {
+      if (currentModal) {
+        currentModal.close();
+      }
+    });
+  });
+
+
+  // Element.prototype에 setStyle 메서드 추가
+  Element.prototype.setStyle = function (styles) {
+    for (var k in styles) this.style[k] = styles[k];
+    return this;
+  };
+
+
+
+//모달창드래그드롭
+
+
+</script>
+
+</html>
