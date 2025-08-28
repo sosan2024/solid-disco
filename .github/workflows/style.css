@@ -1,0 +1,157 @@
+html {
+  height: 100%;
+  width: 100%;
+  /*background-color: black;*/
+}
+
+
+a {text-decoration: none;
+    color: black;}
+
+html,body {width: 100%; overflow-x: hidden; overflow-y: auto;}
+
+* {margin: 0; padding: 0;}
+
+.mobile_btn{
+    position: absolute;
+    top:20px;
+    left: 15px;
+} 
+
+input[id="hamburger"] {
+  display: none;
+}
+input[id="hamburger"] + label {
+  display: block;
+  width: 60px;
+  height: 40px;
+  position: relative;
+  cursor: pointer;
+}
+input[id="hamburger"] + label span {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  border-radius: 30px;
+  background: #000;
+  transition: all 0.35s;
+}
+input[id="hamburger"] + label span:nth-child(1) {
+  top: 0;
+}
+input[id="hamburger"] + label span:nth-child(2) {
+  top: 50%;
+  transform: translateY(-50%);
+}
+input[id="hamburger"] + label span:nth-child(3) {
+  bottom: 0;
+}
+input[id="hamburger"]:checked + label {
+  z-index: 99;
+}
+input[id="hamburger"]:checked + label span {
+  background: black;
+}
+input[id="hamburger"]:checked + label span:nth-child(1) {
+  top: 50%;
+  transform: translateY(-50%) rotate(45deg);
+}
+input[id="hamburger"]:checked + label span:nth-child(2) {
+  opacity: 0;
+}
+input[id="hamburger"]:checked + label span:nth-child(3) {
+  bottom: 50%;
+  transform: translateY(50%) rotate(-45deg);
+}
+div[class="sidebar"] {
+  width: 15%;
+  height: 100%;
+  background: white;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  z-index: 98;
+  transition: all 0.35s;
+}
+
+input[id="hamburger"]:checked + label + div {
+  left: 0;
+}
+
+
+.sidebar li a{
+    display:block;
+    font-weight:bold;
+    line-height:40px;
+    margin:0px;
+    padding:0;
+    text-align:center;
+    text-decoration:none;
+    transition: all 0.4s;
+    }
+
+
+
+#menu ul.nav li .sub_mobile a {
+  position:relative;
+  float:left;
+  display:block;
+  width:100%;
+  z-index:999;
+  background:#ccc;
+}
+
+#menu ul.nav li .sub_mobile a:hover {
+  background:#787878;
+  color:#fff;
+  z-index:999;
+}
+
+
+.modal {
+  width: 400px;
+  height: 600px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: none;
+  border: none;
+  border-radius: 5px;
+  position: fixed;
+  z-index: 9999; /* 모달이 다른 요소 위에 나타나도록 설정 */
+}
+
+.chat_iframe {
+  width: 100%;
+  height: 94%;
+  border: none;
+}
+
+.modal > form > button {
+  background-color: #f0f0f0;
+  color: #4f5af3;
+  border: none;
+  padding: 5px 20px;
+  border-radius: 50px;
+  cursor: pointer;
+  position: relative;
+}
+
+@keyframes show {
+  from {
+    transform: translateY(-200%);
+  }
+  to {
+    transform: translateY(0%);
+  }
+}
+
+@keyframes show-backdrop {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
